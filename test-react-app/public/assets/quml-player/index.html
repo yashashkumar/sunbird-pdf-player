@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUML Player web component demo</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+
+  <style>
+    .player-grid {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      display: grid;
+
+      @media screen and (max-width:768px) {
+        grid-template-columns: 100%;
+        gap: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="player-grid" id="my-player">
+  </div>
+  <script type="text/javascript" src="sunbird-quml-player.js"></script>
+  <script type="text/javascript">
+    const sectionContent = {"copyright":"sunbird","lastStatusChangedOn":"2023-12-22T04:16:50.242+0000","timeLimits":{"questionSet":{"max":0,"min":0}},"author":"contentCreator","children":[{"lastStatusChangedOn":"2023-12-22T04:16:50.190+0000","timeLimits":{"questionSet":{"max":0,"min":0}},"parent":"do_11395276467516211211","children":[{"copyright":"sunbird","lastStatusChangedOn":"2023-12-22T04:17:26.313+0000","parent":"do_11395276534294118411","author":"contentCreator","name":"Even","createdOn":"2023-12-22T04:15:08.148+0000","channel":"0137541424673095687","maxScore":1,"lastUpdatedOn":"2023-12-22T04:17:26.313+0000","subject":["Accountancy"],"showTimer":false,"identifier":"do_11395276601870745611","gradeLevel":["Class 1"],"compatibilityLevel":5,"audience":["Administrator"],"se_boards":["State(Tamil Nadu)"],"primaryCategory":"Multiple Choice Question","se_mediums":["English"],"downloadUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276601870745611/even_1703218645713_do_11395276601870745611_1.ecar","se_subjects":["Accountancy"],"medium":["English"],"interactionTypes":["choice"],"framework":"tn_k-12","versionKey":"1703218508733","mimeType":"application/vnd.sunbird.question","code":"8646c6d6-8443-42e7-86b0-01181a18b7ff","license":"CC BY 4.0","qumlVersion":1.1,"prevStatus":"Draft","showHints":false,"templateId":"mcq-vertical","language":["English"],"board":"State(Tamil Nadu)","showFeedback":false,"objectType":"Question","status":"Live","createdBy":"155ce3c5-713e-4749-bc1c-95d09c640914","contentEncoding":"gzip","depth":2,"lastPublishedBy":"469dc732-04f3-42d9-9a85-30957a797acc","se_gradeLevels":["Class 1"],"se_FWIds":["tn_k-12"],"allowAnonymousAccess":"Yes","contentDisposition":"inline","schemaVersion":"1.1","artifactUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276601870745611/do_11395276601870745611_1703218644890.zip","complexityLevel":["analyse"],"visibility":"Parent","qType":"MCQ","showSolutions":false,"variants":{"full":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276601870745611/even_1703218645713_do_11395276601870745611_1.ecar","size":"3016"},"online":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276601870745611/even_1703218645900_do_11395276601870745611_1_ONLINE.ecar","size":"1451"}},"index":1,"pkgVersion":1},{"copyright":"sunbird","lastStatusChangedOn":"2023-12-22T04:17:26.866+0000","parent":"do_11395276534294118411","author":"contentCreator","name":"PM","createdOn":"2023-12-22T04:16:40.428+0000","channel":"0137541424673095687","maxScore":1,"lastUpdatedOn":"2023-12-22T04:17:26.866+0000","subject":["Accountancy"],"showTimer":false,"identifier":"do_11395276677466521611","gradeLevel":["Class 1"],"compatibilityLevel":5,"audience":["Administrator"],"se_boards":["State(Tamil Nadu)"],"primaryCategory":"Multiple Choice Question","se_mediums":["English"],"downloadUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276677466521611/pm_1703218646537_do_11395276677466521611_1.ecar","se_subjects":["Accountancy"],"medium":["English"],"interactionTypes":["choice"],"framework":"tn_k-12","versionKey":"1703218600454","mimeType":"application/vnd.sunbird.question","code":"eea9e994-346b-4fd0-99d2-9a8490a67bb5","license":"CC BY 4.0","qumlVersion":1.1,"prevStatus":"Draft","showHints":false,"templateId":"mcq-vertical","language":["English"],"board":"State(Tamil Nadu)","showFeedback":false,"objectType":"Question","status":"Live","createdBy":"155ce3c5-713e-4749-bc1c-95d09c640914","contentEncoding":"gzip","depth":2,"lastPublishedBy":"469dc732-04f3-42d9-9a85-30957a797acc","se_gradeLevels":["Class 1"],"se_FWIds":["tn_k-12"],"allowAnonymousAccess":"Yes","contentDisposition":"inline","schemaVersion":"1.1","artifactUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276677466521611/do_11395276677466521611_1703218646415.zip","complexityLevel":[],"visibility":"Parent","qType":"MCQ","showSolutions":false,"variants":{"full":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276677466521611/pm_1703218646537_do_11395276677466521611_1.ecar","size":"3007"},"online":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/question/do_11395276677466521611/pm_1703218646689_do_11395276677466521611_1_ONLINE.ecar","size":"1445"}},"index":2,"pkgVersion":1}],"name":"Section-1","navigationMode":"non-linear","createdOn":"2023-12-22T04:13:45.656+0000","channel":"0137541424673095687","generateDIALCodes":"No","lastUpdatedOn":"2023-12-22T04:16:50.190+0000","showTimer":false,"identifier":"do_11395276534294118411","description":"Section-1","containsUserData":"No","allowSkip":"Yes","compatibilityLevel":6,"trackable":{"enabled":"No","autoBatch":"No"},"primaryCategory":"Practice Question Set","setType":"materialised","languageCode":["en"],"attributions":[],"scoreCutoffType":"AssessmentLevel","versionKey":"1703218425656","mimeType":"application/vnd.sunbird.questionset","code":"a454255d-1ee0-48df-ae1b-66e69fcafea0","license":"CC BY 4.0","qumlVersion":1.1,"prevStatus":"Draft","showHints":false,"language":["English"],"showFeedback":false,"objectType":"QuestionSet","status":"Live","requiresSubmit":"No","shuffle":true,"contentEncoding":"gzip","depth":1,"allowAnonymousAccess":"Yes","contentDisposition":"inline","schemaVersion":"1.1","allowBranching":"No","visibility":"Parent","showSolutions":false,"index":1}],"name":"Sample QuestionSet V2","navigationMode":"non-linear","createdOn":"2023-12-22T04:12:24.845+0000","createdFor":["0137541424673095687"],"channel":"0137541424673095687","pdfUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/do_11395276467516211211_pdf_1703218647645.pdf","generateDIALCodes":"No","lastUpdatedOn":"2023-12-22T04:16:50.254+0000","subject":["Accountancy"],"size":7123,"showTimer":false,"identifier":"do_11395276467516211211","description":"Sample QuestionSet V2","gradeLevel":["Class 1"],"containsUserData":"No","allowSkip":"Yes","compatibilityLevel":6,"audience":["Administrator"],"trackable":{"enabled":"No","autoBatch":"No"},"se_boards":["State(Tamil Nadu)"],"primaryCategory":"Practice Question Set","setType":"materialised","appIcon":"","se_mediums":["English"],"downloadUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/sample-questionset-v2_1703218647276_do_11395276467516211211_1.ecar","se_subjects":["Accountancy"],"medium":["English"],"attributions":[],"scoreCutoffType":"AssessmentLevel","framework":"tn_k-12","versionKey":"1703218610254","mimeType":"application/vnd.sunbird.questionset","code":"38c8ed0e-fc76-4c5c-a161-e8908d70bd94","license":"CC BY 4.0","qumlVersion":1.1,"prevStatus":"Draft","showHints":false,"summaryType":"Complete","language":["English"],"board":"State(Tamil Nadu)","showFeedback":false,"lastPublishedOn":"2023-12-22T04:17:26.925+0000","objectType":"QuestionSet","status":"Live","createdBy":"155ce3c5-713e-4749-bc1c-95d09c640914","requiresSubmit":"No","shuffle":true,"contentEncoding":"gzip","depth":0,"consumerId":"bfe5883f-ac66-4744-a064-3ed88d986eba","lastPublishedBy":"469dc732-04f3-42d9-9a85-30957a797acc","se_gradeLevels":["Class 1"],"se_FWIds":["tn_k-12"],"allowAnonymousAccess":"Yes","contentDisposition":"inline","schemaVersion":"1.1","additionalCategories":[],"allowBranching":"No","previewUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/do_11395276467516211211_html_1703218647645.html","childNodes":["do_11395276601870745611","do_11395276534294118411","do_11395276677466521611"],"visibility":"Default","showSolutions":false,"variants":{"spine":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/sample-questionset-v2_1703218647008_do_11395276467516211211_1_SPINE.ecar","size":"3916"},"online":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/sample-questionset-v2_1703218647145_do_11395276467516211211_1_ONLINE.ecar","size":"3917"},"full":{"ecarUrl":"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/questionset/do_11395276467516211211/sample-questionset-v2_1703218647276_do_11395276467516211211_1.ecar","size":"7123"}},"pkgVersion":1,"instructions":"<p>Sample QuestionSet V2</p>","outcomeDeclaration":{"maxScore":{"cardinality":"single","type":"integer","defaultValue":2}}};
+    const playerConfig = {
+    "context": {
+        "mode": "play",
+        "partner": [],
+        "pdata": {
+            "id": "staging.sunbird.portal",
+            "ver": "7.0.0",
+            "pid": "sunbird-portal"
+        },
+        "contentId": "do_214501408872210432134",
+        "sid": "HJBtxohM7Rtcy0sNS9DCfisTxCcOIv13",
+        "uid": "a5a1d92d-45a3-45e5-a25e-8c95e109412e",
+        "timeDiff": -0.114,
+        "contextRollup": {
+            "l1": "0144880972895272960"
+        },
+        "channel": "0144880972895272960",
+        "did": "137e72ae085cfac8ffa872ed9745e457",
+        "dims": [
+            "0144880972895272960",
+            "0144880972895272960"
+        ],
+        "tags": [
+            "0144880972895272960"
+        ],
+        "app": [
+            "0144880972895272960"
+        ],
+        "objectRollup": {},
+        "userData": {
+            "firstName": "Content Creator",
+            "lastName": ""
+        },
+        "threshold": 3
+    },
+    "config": {
+        "showEndPage": false,
+        "endPage": [
+            {
+                "template": "assessment",
+                "contentType": [
+                    "SelfAssess"
+                ]
+            }
+        ],
+        "showStartPage": true,
+        "host": "",
+        "overlay": {
+            "showUser": false
+        },
+        "splash": {
+            "text": "",
+            "icon": "",
+            "bgImage": "assets/icons/splacebackground_1.png",
+            "webLink": ""
+        },
+        "apislug": "/action",
+        "repos": [
+            "/sunbird-plugins/renderer"
+        ],
+        "plugins": [
+            {
+                "id": "org.sunbird.iframeEvent",
+                "ver": 1,
+                "type": "plugin"
+            },
+            {
+                "id": "org.sunbird.player.endpage",
+                "ver": 1.1,
+                "type": "plugin"
+            }
+        ],
+        "sideMenu": {
+            "showDownload": true,
+            "showExit": true,
+            "showPrint": true,
+            "showReplay": true,
+            "showShare": true
+        },
+        "enableTelemetryValidation": false,
+        "traceId": "13cba410-7ccb-46be-afc1-b1adcff303b1",
+        "pagesHistory": [],
+        "totalPages": 0,
+        "duration": 689716,
+        "rotation": [],
+        "progressBar": [
+            {
+                "index": "A",
+                "class": "partial",
+                "score": 0,
+                "isActive": false,
+                "identifier": "do_214501409276370944136",
+                "children": [
+                    {
+                        "index": 1,
+                        "class": "skipped",
+                        "score": 0,
+                        "showFeedback": false
+                    }
+                ]
+            }
+        ],
+        "questions": [
+            {
+                "id": "do_214501409276370944136",
+                "questions": [
+                    {
+                        "code": "59e16976-2c33-4d3d-b4d4-dcc8aeb417c2",
+                        "qumlVersion": 1.1,
+                        "prevStatus": "Processing",
+                        "downloadUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177575_do_214501409431265280140_1.ecar",
+                        "channel": "0144880972895272960",
+                        "language": [
+                            "English"
+                        ],
+                        "mimeType": "application/vnd.sunbird.question",
+                        "showHints": false,
+                        "media": [],
+                        "variants": {
+                            "full": {
+                                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177575_do_214501409431265280140_1.ecar",
+                                "size": "2347"
+                            },
+                            "online": {
+                                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177659_do_214501409431265280140_1_ONLINE.ecar",
+                                "size": "1132"
+                            }
+                        },
+                        "body": "<p>Q1</p>",
+                        "editorState": {
+                            "answer": "<p>Ans</p>",
+                            "question": "<p>Q1</p>"
+                        },
+                        "createdOn": "2026-02-04T07:53:01.259+0000",
+                        "objectType": "Question",
+                        "interactions": {},
+                        "primaryCategory": "Subjective Question",
+                        "contentDisposition": "inline",
+                        "artifactUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/do_214501409431265280140_1770207177286.zip",
+                        "lastUpdatedOn": "2026-02-04T12:12:57.700+0000",
+                        "contentEncoding": "gzip",
+                        "showSolutions": false,
+                        "allowAnonymousAccess": "Yes",
+                        "identifier": "do_214501409431265280140",
+                        "lastStatusChangedOn": "2026-02-04T12:12:57.700+0000",
+                        "schemaVersion": "1.1",
+                        "visibility": "Parent",
+                        "showTimer": false,
+                        "se_languages": "[\"[\\\"English\\\"]\"]",
+                        "se_FWIds": [
+                            "NCF"
+                        ],
+                        "solutions": {},
+                        "outcomeDeclaration": {
+                            "maxScore": {
+                                "cardinality": "single",
+                                "type": "integer",
+                                "defaultValue": 1
+                            },
+                            "hint": {
+                                "cardinality": "single",
+                                "type": "string",
+                                "defaultValue": "a07f6065-b0e5-4330-aef0-89ecc2007851"
+                            }
+                        },
+                        "qType": "SA",
+                        "maxScore": 1,
+                        "lastPublishedBy": "aaa91661-c266-4204-8c67-0788ad622bf8",
+                        "languageCode": [
+                            "en"
+                        ],
+                        "pkgVersion": 1,
+                        "showFeedback": false,
+                        "versionKey": "214501409433673728142",
+                        "license": "CC BY 4.0",
+                        "framework": "NCF",
+                        "answer": "<div class='answer-container'><div class='answer-body'><p>Ans</p></div></div>",
+                        "createdBy": "a5a1d92d-45a3-45e5-a25e-8c95e109412e",
+                        "compatibilityLevel": 5,
+                        "name": "Q1",
+                        "status": "Live"
+                    }
+                ]
+            }
+        ],
+        "questionIds": [],
+        "lastQuestionId": ""
+    },
+    "metadata": {
+        "lastStatusChangedOn": "2026-02-04T07:53:45.866+0000",
+        "identifier": "do_214501408872210432134",
+        "allowSkip": "Yes",
+        "se_subjects": [
+            "[\"English\"]"
+        ],
+        "qumlVersion": 1.1,
+        "se_languages": [
+            "[\"English\"]"
+        ],
+        "shuffle": true,
+        "se_gradeLevels": [
+            "[\"Class 1\"]"
+        ],
+        "se_FWIds": [
+            "NCF",
+            "[\"NCF\"]"
+        ],
+        "pkgVersion": 1,
+        "timeLimits": {
+            "questionSet": {
+                "max": 0,
+                "min": 0
+            }
+        },
+        "children": [
+            {
+                "lastStatusChangedOn": "2026-02-04T07:53:45.859+0000",
+                "timeLimits": {
+                    "questionSet": {
+                        "max": 0,
+                        "min": 0
+                    }
+                },
+                "parent": "do_214501408872210432134",
+                "children": [
+                    {
+                        "lastStatusChangedOn": "2026-02-04T12:12:57.700+0000",
+                        "parent": "do_214501409276370944136",
+                        "name": "Q1",
+                        "createdOn": "2026-02-04T07:53:01.259+0000",
+                        "channel": "0144880972895272960",
+                        "maxScore": 1,
+                        "lastUpdatedOn": "2026-02-04T12:12:57.700+0000",
+                        "showTimer": false,
+                        "identifier": "do_214501409431265280140",
+                        "compatibilityLevel": 5,
+                        "primaryCategory": "Subjective Question",
+                        "downloadUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177575_do_214501409431265280140_1.ecar",
+                        "framework": "NCF",
+                        "versionKey": "214501409433673728142",
+                        "mimeType": "application/vnd.sunbird.question",
+                        "code": "59e16976-2c33-4d3d-b4d4-dcc8aeb417c2",
+                        "license": "CC BY 4.0",
+                        "qumlVersion": 1.1,
+                        "se_languages": "[\"[\\\"English\\\"]\"]",
+                        "prevStatus": "Processing",
+                        "showHints": false,
+                        "language": [
+                            "English"
+                        ],
+                        "showFeedback": false,
+                        "objectType": "Question",
+                        "status": "Live",
+                        "graphId": "domain",
+                        "createdBy": "a5a1d92d-45a3-45e5-a25e-8c95e109412e",
+                        "contentEncoding": "gzip",
+                        "depth": 2,
+                        "lastPublishedBy": "aaa91661-c266-4204-8c67-0788ad622bf8",
+                        "se_FWIds": [
+                            "NCF"
+                        ],
+                        "allowAnonymousAccess": "Yes",
+                        "contentDisposition": "inline",
+                        "schemaVersion": "1.1",
+                        "artifactUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/do_214501409431265280140_1770207177286.zip",
+                        "visibility": "Parent",
+                        "qType": "SA",
+                        "showSolutions": false,
+                        "variants": {
+                            "full": {
+                                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177575_do_214501409431265280140_1.ecar",
+                                "size": "2347"
+                            },
+                            "online": {
+                                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/question/do_214501409431265280140/q1_1770207177659_do_214501409431265280140_1_ONLINE.ecar",
+                                "size": "1132"
+                            }
+                        },
+                        "index": 1,
+                        "pkgVersion": 1
+                    }
+                ],
+                "name": "Section 1",
+                "navigationMode": "non-linear",
+                "createdOn": "2026-02-04T07:52:42.057+0000",
+                "channel": "0144880972895272960",
+                "generateDIALCodes": "No",
+                "lastUpdatedOn": "2026-02-04T07:53:45.859+0000",
+                "showTimer": false,
+                "identifier": "do_214501409276370944136",
+                "description": "Desc",
+                "containsUserData": "No",
+                "allowSkip": "Yes",
+                "compatibilityLevel": 6,
+                "trackable": {
+                    "enabled": "No",
+                    "autoBatch": "No"
+                },
+                "primaryCategory": "Practice Question Set",
+                "setType": "materialised",
+                "languageCode": [
+                    "en"
+                ],
+                "attributions": [],
+                "scoreCutoffType": "AssessmentLevel",
+                "versionKey": "1770191562057",
+                "mimeType": "application/vnd.sunbird.questionset",
+                "code": "4c245433-39e1-432f-aa6e-74931008da83",
+                "license": "CC BY 4.0",
+                "qumlVersion": 1.1,
+                "prevStatus": "Draft",
+                "showHints": false,
+                "language": [
+                    "English"
+                ],
+                "showFeedback": false,
+                "objectType": "QuestionSet",
+                "status": "Live",
+                "requiresSubmit": "No",
+                "shuffle": true,
+                "contentEncoding": "gzip",
+                "depth": 1,
+                "instructions": "<p>Ins</p>",
+                "allowAnonymousAccess": "Yes",
+                "contentDisposition": "inline",
+                "schemaVersion": "1.1",
+                "allowBranching": "No",
+                "visibility": "Parent",
+                "showSolutions": false,
+                "index": 1
+            }
+        ],
+        "name": "Untitled QuestionSet",
+        "navigationMode": "non-linear",
+        "channel": "0144880972895272960",
+        "createdOn": "2026-02-04T07:51:52.758+0000",
+        "createdFor": [
+            "0144880972895272960"
+        ],
+        "pdfUrl": "",
+        "generateDIALCodes": "No",
+        "lastUpdatedOn": "2026-02-04T07:53:45.948+0000",
+        "subject": [
+            "English"
+        ],
+        "size": 4829,
+        "showTimer": false,
+        "description": "Desc",
+        "gradeLevel": [
+            "Class 1"
+        ],
+        "containsUserData": "No",
+        "compatibilityLevel": 6,
+        "audience": [
+            "Student"
+        ],
+        "trackable": {
+            "enabled": "No",
+            "autoBatch": "No"
+        },
+        "se_boards": [
+            "CBSE"
+        ],
+        "primaryCategory": "Practice Question Set",
+        "setType": "materialised",
+        "appIcon": "",
+        "se_mediums": [
+            "[\"English\"]"
+        ],
+        "downloadUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/questionset/do_214501408872210432134/untitled-questionset_1770207181804_do_214501408872210432134_1.ecar",
+        "medium": [
+            "English"
+        ],
+        "attributions": [],
+        "scoreCutoffType": "AssessmentLevel",
+        "framework": "NCF",
+        "versionKey": "214501409799766016145",
+        "mimeType": "application/vnd.sunbird.questionset",
+        "code": "8572575e-c8d8-49f9-8bf1-0e59b132281f",
+        "license": "CC BY 4.0",
+        "prevStatus": "Review",
+        "showHints": false,
+        "language": [
+            "English"
+        ],
+        "board": "CBSE",
+        "showFeedback": false,
+        "lastPublishedOn": "2026-02-04T12:13:01.681+0000",
+        "objectType": "QuestionSet",
+        "status": "Live",
+        "graphId": "domain",
+        "targetFWIds": [
+            "NCF"
+        ],
+        "createdBy": "a5a1d92d-45a3-45e5-a25e-8c95e109412e",
+        "requiresSubmit": "No",
+        "contentEncoding": "gzip",
+        "depth": 0,
+        "consumerId": "4c6965ca-6dd1-4bf0-9d5d-8b13c405339f",
+        "lastPublishedBy": "aaa91661-c266-4204-8c67-0788ad622bf8",
+        "allowAnonymousAccess": "Yes",
+        "contentDisposition": "inline",
+        "schemaVersion": "1.1",
+        "allowBranching": "No",
+        "previewUrl": "",
+        "childNodes": [
+            "do_214501409431265280140",
+            "do_214501409276370944136"
+        ],
+        "visibility": "Default",
+        "showSolutions": false,
+        "variants": {
+            "spine": {
+                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/questionset/do_214501408872210432134/untitled-questionset_1770207181695_do_214501408872210432134_1_SPINE.ecar",
+                "size": "3561"
+            },
+            "online": {
+                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/questionset/do_214501408872210432134/untitled-questionset_1770207181773_do_214501408872210432134_1_ONLINE.ecar",
+                "size": "3560"
+            },
+            "full": {
+                "ecarUrl": "https://eddevlda72f12a.blob.core.windows.net/ed-devl-public-4e0bb10266/questionset/do_214501408872210432134/untitled-questionset_1770207181804_do_214501408872210432134_1.ecar",
+                "size": "4829"
+            }
+        },
+        "outcomeDeclaration": {
+            "maxScore": {
+                "cardinality": "single",
+                "type": "integer",
+                "defaultValue": 1
+            }
+        }
+    },
+    "data": {}
+}
+
+    // Need to pass the API URL to fetch the question set
+    window.questionListUrl = 'https://dev.sunbirded.org/api/question/v2/list';
+    const qumlPlayerElement = document.createElement('sunbird-quml-player');
+    qumlPlayerElement.setAttribute('player-config', JSON.stringify(playerConfig));
+    qumlPlayerElement.addEventListener('playerEvent', (event) => {
+      console.log("On playerEvent", event);
+    });
+
+    qumlPlayerElement.addEventListener('telemetryEvent', (event) => {
+      console.log("On telemetryEvent", event);
+    });
+
+    const myPlayer = document.getElementById("my-player");
+    myPlayer.appendChild(qumlPlayerElement);
+  </script>
+</body>
+
+</html>
+
+
+<!--
+  Steps to run locally:
+  1. Install http-server npm package locally `npm i http-server -g`
+  2. From the player root, build the web component using `npm run build-web-component`
+  3. Still from the player root, run the server using `http-server .`
+  4. Open http://localhost:8080/web-component/assets/quml-player/index.html
+     The example will load the latest build from the same directory.
+-->

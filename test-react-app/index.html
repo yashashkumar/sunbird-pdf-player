@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunbird Players - React Test</title>
+
+  <!-- Required dependencies for Sunbird Players (must load in this order) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <!-- ePub Player Web Component -->
+  <link rel="stylesheet" href="/assets/epub-player/styles.css">
+  <script src="/assets/epub-player/sunbird-epub-player.js"></script>
+  <!-- PDF Player Web Component -->
+  <link rel="stylesheet" href="/assets/pdf-player/styles.css">
+  <script src="/assets/pdf-player/sunbird-pdf-player.js"></script>
+
+  <!-- Video Player Web Component -->
+  <link rel="stylesheet" href="/assets/video-player/styles.css">
+  <script src="/assets/video-player/sunbird-video-player.js"></script>
+
+  <!-- QUML Player Web Component -->
+  <link rel="stylesheet" href="/assets/quml-player/styles.css">
+  <script src="/assets/quml-player/sunbird-quml-player.js"></script>
+
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
